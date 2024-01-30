@@ -31,7 +31,8 @@ signature = private_key.sign(
 try:
     public_key.verify(
         signature,  # The signature to be verified.
-        message,  # A different, unsigned message for verification.
+        message,  # The message to be verified.
+        # message2,  # A different, unsigned message for verification.
         padding.PSS(  # Use the same padding and hashing algorithm.
             mgf=padding.MGF1(hashes.SHA256()),  # Specify the Mask Generation Function.
             salt_length=padding.PSS.MAX_LENGTH  # Define salt length for padding.
@@ -39,6 +40,5 @@ try:
         hashes.SHA256()  # Specify the hash algorithm as SHA-256.
     )
     print(f"{Fore.GREEN}Signature verified: The message is authentic.")  # Print verification success in green.
-
 except Exception:
     print(f"{Fore.RED}Signature verification failed: The message may have been tampered with.")  # Print verification failure in red.
