@@ -5,7 +5,6 @@ from colorama import Fore, init
 # Initialise colorama.
 init()
 
-
 # Function to get Euclidean Algorithm.
 def extended_gcd(a, b):
     """
@@ -64,7 +63,7 @@ def affine_decrypt(ciphertext, a, b):
     return plaintext
 
 
-# Function to peform brute force attack.
+# Function to perform brute force attack.
 def affine_brute_force(ciphertext):
     """
     Brute-force attack to find possible keys for an Affine Cipher

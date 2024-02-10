@@ -5,7 +5,6 @@ from colorama import init, Fore
 # Initialise colorama.
 init()
 
-
 # Function to perform Affine Cipher encryption.
 def affine_encryption(plaintext, a, b):
     # Define the uppercase alphabet.

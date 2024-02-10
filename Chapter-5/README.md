@@ -1,0 +1,1 @@
+$ python generate_and_verify_signatures.py
