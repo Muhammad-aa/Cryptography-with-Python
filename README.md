@@ -37,3 +37,4 @@ Here's the list:
 - [`file_encryption_utility.py`](Chapter-6/file-encryption-and-validation/file_encryption_utility.py): Encrypting files with AES using the `cryptography` library.
 - [`file_validator.py`](Chapter-6/file-encryption-and-validation/file_validator.py): Validates the checksum of a downloaded file from the Internet.
 - [`ransomware.py`](Chapter-6/ransomware/): A program that encrypts entire folders with a key derived from a password.
+- [Implementing 2FA](Chapter-6/implement-2fa/): Implementing Two-Factor Authentication with Python.
